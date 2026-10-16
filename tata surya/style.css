@@ -1,0 +1,346 @@
+
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080d24;
+    color: #f5f6ff;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVIGASI */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #111936;
+    border-bottom: 1px solid #28345c;
+}
+
+.navbar h2 {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.link-nav {
+    color: #9edcff;
+    font-weight: bold;
+}
+
+/* HALAMAN UTAMA */
+.hero {
+    min-height: 480px;
+    padding: 100px 20px;
+    text-align: center;
+    background:
+        radial-gradient(circle at 20% 20%, #283f78 0, transparent 30%),
+        radial-gradient(circle at 80% 70%, #46266f 0, transparent 35%),
+        #080d24;
+}
+
+.hero h1 {
+    max-width: 800px;
+    margin: 15px auto;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 15px auto 25px;
+    color: #cbd4f2;
+}
+
+.label {
+    color: #8edcff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* TOMBOL */
+.tombol {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 9px;
+    background: #6879ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tombol:hover {
+    background: #8793ff;
+    transform: translateY(-2px);
+}
+
+/* BAGIAN ANGGOTA KELOMPOK */
+.anggota {
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.anggota h2 {
+    margin-bottom: 15px;
+    color: #9edcff;
+}
+
+.anggota p {
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #29365e;
+    border-radius: 7px;
+    background: #111936;
+}
+
+/* KONTEN UMUM */
+.container {
+    width: 84%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.judul-halaman {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.judul-halaman h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.judul-halaman p {
+    color: #bdc8e9;
+}
+
+/* KARTU MENU DAN KARTU PLANET */
+.grid-menu,
+.grid-planet {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.kartu {
+    padding: 25px;
+    border: 1px solid #29365e;
+    border-radius: 15px;
+    background: #111936;
+    box-shadow: 0 8px 24px #00000020;
+}
+
+.kartu h2 {
+    margin: 10px 0;
+}
+
+.kartu p {
+    color: #cbd4f2;
+}
+
+.ikon {
+    font-size: 38px;
+}
+
+.planet {
+    text-align: center;
+}
+
+.planet-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    font-size: 55px;
+}
+
+.merkurius {
+    color: #aaa9b5;
+}
+
+.venus {
+    color: #f3bd76;
+}
+
+.bumi {
+    color: #75c7ff;
+}
+
+.mars {
+    color: #ff827c;
+}
+
+.jupiter {
+    color: #e5b17c;
+}
+
+.saturnus {
+    color: #e9d49c;
+}
+
+.uranus {
+    color: #7ce5e9;
+}
+
+.neptunus {
+    color: #668cff;
+}
+
+/* DETAIL INFORMASI */
+details {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #1b2749;
+    text-align: left;
+}
+
+summary {
+    color: #9edcff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details p {
+    margin-top: 8px;
+}
+
+/* MISI BELAJAR */
+.isi-misi {
+    margin-bottom: 20px;
+}
+
+.isi-misi ol {
+    padding-left: 25px;
+    color: #cbd4f2;
+}
+
+.isi-misi li {
+    margin: 8px 0;
+}
+
+/* KUIS */
+.kuis fieldset {
+    margin-bottom: 22px;
+    padding: 18px;
+    border: 1px solid #35436e;
+    border-radius: 10px;
+}
+
+.kuis legend {
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+.kuis label {
+    display: block;
+    margin: 10px 0;
+    color: #dce3fa;
+    cursor: pointer;
+}
+
+.kuis input {
+    margin-right: 8px;
+    accent-color: #8793ff;
+}
+
+.catatan {
+    margin: 25px 0;
+    padding: 15px;
+    border-left: 4px solid #6879ff;
+    background: #111936;
+    color: #cbd4f2;
+}
+
+/* VIDEO */
+.video {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.ikon-video {
+    font-size: 70px;
+}
+
+/* TOMBOL KEMBALI DAN FOOTER */
+.tengah {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.kembali {
+    display: inline-block;
+    margin-top: 20px;
+    color: #9edcff;
+}
+
+footer {
+    margin-top: 35px;
+    padding: 20px;
+    border-top: 1px solid #28345c;
+    text-align: center;
+    color: #9ba8cc;
+    font-size: 14px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 650px) {
+    .navbar {
+        padding: 15px 5%;
+        gap: 12px;
+    }
+
+    .navbar h2 {
+        font-size: 17px;
+    }
+
+    .hero {
+        min-height: 400px;
+        padding: 75px 20px;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    .judul-halaman h1 {
+        font-size: 27px;
+    }
+
+    .grid-menu,
+    .grid-planet {
+        grid-template-columns: 1fr;
+    }
+
+    .anggota {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .anggota p {
+        overflow-wrap: anywhere;
+        font-size: 14px;
+    }
+}
